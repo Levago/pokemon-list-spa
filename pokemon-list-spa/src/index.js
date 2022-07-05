@@ -4,30 +4,30 @@ import './index.css';
 import App from './App';
 import AlumnInfo from './components/alumnInfo';
 import Pokemons from './components/pokemons';
+import { Layout } from './components/Layout';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 
 ReactDOM.render( <
-    BrowserRouter >
+    BrowserRouter > <
+    Routes > <
+    Route path = '/'
+    element = { < Layout / > } >
     <
-    Routes >
-    <
-    Route path = '/pokemons'
+    Route path = 'pokemons'
     element = { <
         App / >
     }
     /><
-    Route path = '/pokemon'
+    Route path = 'pokemonInfo'
     element = { < Pokemons / > }
     / > <
-    Route path = '/Matricula'
+    Route path = 'Matricula'
     element = { < AlumnInfo / > }
     / > <
     Route path = '*'
-    element = { < Navigate replace to = '/pokemons' /
-        >
-    }
-    / > < /
+    element = { < Navigate replace to = '/' / > }
+    / > </Route > < /
     Routes >
     <
     /BrowserRouter > ,
