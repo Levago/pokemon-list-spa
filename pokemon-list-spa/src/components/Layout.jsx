@@ -5,6 +5,7 @@ export function Layout(){
      <main>
         <nav>
           <Link to='/pokemons'>Home</Link> | {""}
+          <Link to='/pokemonInfo'>Informacion de pokemon</Link> | {""}
           <Link to='/Matricula'>Matricula</Link> | {""}
         </nav> 
         <section>

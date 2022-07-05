@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import AlumnInfo from './components/alumnInfo';
-import Pokemons from './components/pokemons';
+import PokemonInfo from './components/pokemonInfo';
 import { Layout } from './components/Layout';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
@@ -20,7 +20,7 @@ ReactDOM.render( <
     }
     /><
     Route path = 'pokemonInfo'
-    element = { < Pokemons / > }
+    element = { < PokemonInfo / > }
     / > <
     Route path = 'Matricula'
     element = { < AlumnInfo / > }
